@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  margin-left: 70px;
+}
+
+body{
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+}
+
+.mensaje{
+  width: 330px;
+  height: 500px;
+  margin-left: 90px;
+  background-image: url(./img/Muñeco.png) ;
+  background-repeat: no-repeat;
+  background-position: initial;
+}
