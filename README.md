@@ -1,5 +1,7 @@
 # <b>Challenge Oracle One Sprint 01:</b><br> Construye un encriptador de texto con Javascript
 
+<img src="/img/webfinal.png" alt="web"/>
+
 ## 👨🏽‍💻 ¿En qué consiste?
 
 Construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y presentarlo en su forma encriptada o desencriptada.
