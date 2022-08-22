@@ -38,6 +38,9 @@ function encriptar(stringEncriptada) {
 function btnDesencriptar() {
   const textoEncriptado = desencriptar(inputText.value)
   message.value = textoEncriptado;
+  message.style.backgroundImage = "none"
+  imgocultar.style.visibility = "hidden"
+  copiar.style.visibility = "visible"
   inputText.value = ""
 
 }
