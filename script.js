@@ -1,11 +1,17 @@
 const inputText = document.querySelector(".input_Text");
 const message = document.querySelector(".mensaje");
+const copiar = document.querySelector(".copiar")
+const imgocultar = document.getElementById("img_text")
+
+
 
 
 function btnEncriptar() {
   const textoEncriptado = encriptar(inputText.value)
   message.value = textoEncriptado;
   message.style.backgroundImage = "none"
+  imgocultar.style.visibility = "hidden"
+  copiar.style.visibility = "visible"
   inputText.value = ""
 }
 
