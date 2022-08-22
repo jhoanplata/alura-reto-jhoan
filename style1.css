@@ -1,18 +1,208 @@
 main {
   display: flex;
-  margin-left: 70px;
 }
 
-body{
+body {
   background: #e5e5e5;
   font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.mensaje{
-  width: 330px;
-  height: 500px;
-  margin-left: 90px;
-  background-image: url(./img/Muñeco.png) ;
+.logo {
+  position: absolute;
+  width: 100%;
+  left: 80px;
+  top: 40px;
+}
+
+.container {
+  width: 55%;
+  height: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_Text {
+  margin-top: 138px;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0a3871;
+  background-color: transparent;
+  resize: none; /*sirve para que no se pueda redimensionar el textarea*/
+  border: none;
+}
+
+.mensaje {
+  width: 290px;
+  height: 300px;
+  font-size: 24px;
+  line-height: 36px;
+  background-image: url(./img/Muñeco.png);
   background-repeat: no-repeat;
   background-position: initial;
+  background-size: contain;
+  border: none;
+  resize: none;
+  border-radius: 10px;
+}
+
+.panel_lateral {
+  height: 600px;
+  margin-top: 80px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.panel_lateral img {
+  margin-top: 30px;
+}
+
+.advertencia {
+  margin-left: 8px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #495057;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.encriptar {
+  padding: 20px;
+  position: relative;
+  width: 42%;
+  background: #0a3871;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+}
+
+.encriptar:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.encriptar:active {
+  background: #041121;
+}
+.desencriptar {
+  padding: 20px;
+  position: relative;
+  margin-left: 30px;
+  width: 42%;
+  background: #fff;
+  border-radius: 25px;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+}
+
+.desencriptar:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.desencriptar:active {
+  background: #041121;
+  color: #fff;
+}
+
+.copiar {
+  margin-top: 50px;
+  padding: 20px;
+  position: relative;
+  width: 60%;
+  background: #fff;
+  border-radius: 25px;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  visibility: hidden;
+}
+
+.copiar:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.copiar:last-child:active {
+  background: #041121;
+  color: #fff;
+}
+
+footer .redes-sociales {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  margin: 20px;
+  text-align: center;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+}
+
+/* footer .redes-sociales */
+footer .redes-sociales .facebook {
+  background: #0a3871;
+}
+footer .redes-sociales .instagram {
+  background: #0a3871;
+}
+footer .redes-sociales .github {
+  background: #0a3871;
+}
+footer .redes-sociales .linkedin {
+  background: #0a3871;
+}
+
+footer .redes-sociales a i {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+footer .contenedor-icono:hover a {
+  animation: icono 0.5s ease;
+}
+
+/* animaciones de los iconos de las  redes sociales */
+@keyframes icono {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    -moz-transform: rotate3d(0, 1, 0, 360deg);
+    -ms-transform: rotate3d(0, 1, 0, 360deg);
+    -o-transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+footer .creado-por {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #0a3871;
+}
+
+footer .creado-por a {
+  color: #0a3871;
+  margin-bottom: 20px;
+}
+footer .creado-por a:hover {
+  text-decoration: underline;
 }
