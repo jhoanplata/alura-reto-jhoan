@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,28 +17,58 @@
         </div>
     </header>
     <main>
-        <section>
-
-            <textarea class="input_Text" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <p class="advertencia"> <i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos.
-            </p>
-            <div class="botones">
-                <button class="encriptar" onclick="btnEncriptar()">
-                    <i class="fas fa-lock"></i> Encriptar
-                </button>
-                <button class="desencriptar" onclick="btnDesencriptar()">
-                    <i class="fas fa-unlock"></i> Desencriptar
-                </button>
-            </div>
+        <section class="container">
+                <textarea class="input_Text" cols="40" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <p class="advertencia"> <i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos.
+                </p>
+                <div class="botones">
+                    <button class="encriptar" onclick="btnEncriptar()">
+                        <i class="fas fa-lock"></i> Encriptar
+                    </button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">
+                        <i class="fas fa-unlock"></i> Desencriptar
+                    </button>
+                </div>
         </section>
-        <section>
-            <textarea class="mensaje" cols="18" rows="8">
+        <section class="panel_lateral">
+            <textarea class="mensaje" cols="18" rows="8" id="mensaje_area">
             </textarea>
+            <img src="./img/Frame 5.png" alt="segundaimagen" id="img_text">
             <button class="copiar" onclick="btncopiar()">
                 <i class="fas fa-copy"></i> Copiar</button>
         </section>
     </main>
+    <footer class="contenedor">
+        <div class="redes-sociales">
+            <div class="contenedor-icono">
+                <a href="https://www.facebook.com/sebastianplata26/" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="http://www.instagram.com/jhoanplata22" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="https://github.com/jhoanplata" target="_blank" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="https://www.linkedin.com/in/jhosepro/" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <div class="creado-por">
+            <p>Sitio diseñado por Jhoan Plata </p>
+            <p> Reto Alura Latam 2022 <i class="fas fa-copyright"></i></p>
+        </div>
+    </footer>
+
 </body>
+
 <script src="script.js"></script>
 
 </html>
