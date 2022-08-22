@@ -250,7 +250,7 @@ footer .creado-por a:hover {
   }
 }
 
-
+/* Construccion de responsive para tablets 
 @media only screen and (max-width: 768px) {
   main {
     display: flex;
@@ -299,5 +299,7 @@ footer .creado-por a:hover {
     width: 22%;
   }
 }
-  
 }
+*/
+  
+/* Construccion de responsive para celulares */
