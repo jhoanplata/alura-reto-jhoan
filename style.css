@@ -279,6 +279,10 @@ footer .creado-por a:hover {
     margin-left: 30px;
   }
 
+  .panel_lateral img {
+    width: 95%;
+  }
+
   .mensaje{
     height: 250px;
     width: 90%;
