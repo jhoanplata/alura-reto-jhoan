@@ -259,58 +259,6 @@ footer .creado-por a:hover {
   }
 }
 
-/* Construccion de responsive para tablets 
-@media only screen and (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo {
-    width: 100%;
-    left: 20px;
-    top: 40px;
-  }
-
-  .container {
-    width: 80%;
-    margin-left: 70px;
-    height: 600px;
-  }
-
-  .mensaje {
-    background-image: url(./img/Frame\ 5.png);
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 2
-    
-  }
-  .panel_lateral {
-    width: 80%;
-    height: 30
-  }
-
-  .panel_lateral img {
-  visibility: hidden;
-}
-
-  .botones {
-    align-items: center;
-    justify-content: space-between;
-  }
-  .encriptar {
-    width: 40%;
-  }
-  .desencriptar {
-    width: 42%;
-  }
-  .copiar {
-    width: 22%;
-  }
-}
-}
-*/
-
 /* Construccion de responsive para celulares */
 
 @media only screen and (max-width: 767px) {
@@ -333,6 +281,7 @@ footer .creado-por a:hover {
 
   .mensaje{
     height: 250px;
+    width: 90%;
   }
 
 }
